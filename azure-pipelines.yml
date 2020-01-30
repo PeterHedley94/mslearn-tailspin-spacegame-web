@@ -48,8 +48,8 @@ steps:
   inputs:
     SonarCloud: 'SonarCloud connection 1'
     organization: '$(SonarOrganization)'
-    projectKey: '$(SonarProjectKey)'
-    projectName: '$(SonarProjectName)'
+    cliProjectKey: '$(SonarProjectKey)'
+    cliProjectName: '$(SonarProjectName)'
     projectVersion: '$(Build.BuildNumber)'
     extraProperties: |
      sonar.cs.opencover.reportsPaths=$(Build.SourcesDirectory)/TestResults/Coverage/coverage.opencover.xml
